@@ -5,8 +5,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        'max-content': 'max-content'
+      },
+      fontFamily: {
+        poppins: "'Poppins', sans-serif"
+      }
+    },
   },
   plugins: [require("daisyui")],
+
+  daisyui: {
+    themes: ["cupcake"],
+  }
 }
 
