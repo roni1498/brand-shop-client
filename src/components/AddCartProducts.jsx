@@ -38,7 +38,7 @@ const AddCartProducts = () => {
                 if (result.isConfirmed) {
                   Swal.fire({
                     title: "Deleted!",
-                    text: "Your file has been deleted.",
+                    text: "Your product has been deleted.",
                     icon: "success"
                   });
                   if(data.deletedCount>0){

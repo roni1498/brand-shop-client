@@ -90,9 +90,9 @@ const ProductCard = ({ product }) => {
          <Link to={`/updateProduct/${_id}`}> <button className="btn rounded-lg text-xl">
             <GrUpdate></GrUpdate>
           </button></Link>
-          <button className="btn rounded-lg text-xl">
+         <Link to={`/productDetails/${_id}`}> <button className="btn rounded-lg text-xl">
             <FaEye></FaEye>
-          </button>
+          </button></Link>
         </div>
       </div>
     </div>
