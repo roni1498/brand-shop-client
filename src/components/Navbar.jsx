@@ -26,7 +26,7 @@ const Navbar = () => {
   for (const item of cart) {
     total = total + Number(item?.price)
   }
-  console.log("total", total)
+  
   const links = (
     <>
       <li>

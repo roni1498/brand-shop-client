@@ -47,7 +47,7 @@ const AuthProvider = ({ children }) => {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await fetch('http://localhost:5000/addToCart'); // Replace with your API endpoint
+            const response = await fetch('https://brandshop-backend.vercel.app/addToCart');
             const cartData = await response.json();
             setCart(cartData);
           } catch (error) {

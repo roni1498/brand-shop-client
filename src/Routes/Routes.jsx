@@ -27,7 +27,7 @@ const router = createBrowserRouter([
             {
                 path: "/updateProduct/:id",
                 element: <PrivateRoutes><UpdateProduct></UpdateProduct></PrivateRoutes>,
-                loader: ({params}) => fetch(`http://localhost:5000/single-product/${params.id}`)
+                loader: ({params}) => fetch(`https://brandshop-backend.vercel.app/single-product/${params.id}`)
             },
             {
                 path: "/addProducts",
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
             {
                 path: "/myCart",
                 element: <PrivateRoutes><MyCart></MyCart></PrivateRoutes>,
-                loader: () => fetch('http://localhost:5000/addToCart')
+                loader: () => fetch('https://brandshop-backend.vercel.app/addToCart')
             },
             {
                 path: "/signUp",
@@ -49,12 +49,12 @@ const router = createBrowserRouter([
             {
                 path: "/allProducts",
                 element: <AllProducts></AllProducts>,
-                loader: () => fetch('http://localhost:5000/product')
+                loader: () => fetch('https://brandshop-backend.vercel.app/product')
             },
             {
                 path: "products/:brandName",
                 element: <ProductsByBrand></ProductsByBrand>,
-                loader: ({params}) => fetch(`http://localhost:5000/product/${params.brandName}`)
+                loader: ({params}) => fetch(`https://brandshop-backend.vercel.app/product/${params.brandName}`)
             },
             {
                 path: "/userPage",
@@ -63,7 +63,7 @@ const router = createBrowserRouter([
             {
                 path: "/productDetails/:id",
                 element: <PrivateRoutes><ProductDetails></ProductDetails></PrivateRoutes>,
-                loader: ({params}) => fetch(`http://localhost:5000/single-product/${params.id}`)
+                loader: ({params}) => fetch(`https://brandshop-backend.vercel.app/single-product/${params.id}`)
             }
            
         ]

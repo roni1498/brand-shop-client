@@ -7,7 +7,6 @@ import NotAvailableProduct from "./NotAvailableProduct";
 
 const ProductsByBrand = () => {
   const productsByBrand = useLoaderData();
-  console.log(productsByBrand)
 
   return (
     <div>

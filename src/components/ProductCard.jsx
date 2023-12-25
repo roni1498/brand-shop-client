@@ -33,7 +33,7 @@ const ProductCard = ({ product }) => {
     };
     console.log(addCartProduct, "product add to cart");
     // data send to the server
-    fetch("http://localhost:5000/addToCart", {
+    fetch("https://brandshop-backend.vercel.app/addToCart", {
       method: "POST",
       headers: {
         "content-type": "application/json",

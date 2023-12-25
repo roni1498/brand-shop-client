@@ -27,7 +27,7 @@ const ProductDetails = () => {
     };
     console.log(addCartProduct, "product add to cart");
     // data send to the server
-    fetch("http://localhost:5000/addToCart", {
+    fetch("https://brandshop-backend.vercel.app/addToCart", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -53,7 +53,7 @@ const ProductDetails = () => {
           </div>
         <div className="w-full h-screen lg:flex flex-start">
           <div className="relative lg:w-1/2 h-full flex flex-col">
-            <img src={image} className="w-full h-full object-cover" alt="image" />
+            <img src={image} className="w-full h-full object-contain" alt="image" />
           </div>
           <div className="lg:w-1/2 h-full p-20">
           <button className="py-1 px-2 bg-black text-white rounded-md mb-2">{productType}</button>

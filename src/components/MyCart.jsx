@@ -29,7 +29,7 @@ const MyCart = () => {
         cancelButtonColor: "#d33",
         confirmButtonText: "Yes, delete it!"
       }).then((result) => {
-    fetch(`http://localhost:5000/addToCart/${_id}`,{
+    fetch(`https://brandshop-backend.vercel.app/addToCart/${_id}`,{
         method: 'DELETE'
     })
     .then(res => res.json())
